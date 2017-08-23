@@ -1,8 +1,17 @@
 function Main(input){
     input = input.split("\n");
-    input[1].sort();
+    var arr = input[1].split(" ");
+    var _arr = [];
 
-    console.log(input[1][input[0] - 1]);
+    arr.forEach(function(val){
+        _arr.push(parseInt(val, 10));
+    });
+
+    _arr.sort(function(a, b){
+        return a - b 
+    });
+
+    console.log(_arr[parseInt(input[0], 10) - 1]);
 }
 
 Main(require("fs").readFileSync("/dev/stdin", "utf8"));
