@@ -1,0 +1,17 @@
+{
+  "name": "AtCoder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/locol23/AtCoder.git",
+  "author": "terazawa <terazawa-y@gnavi.co.jp>",
+  "license": "MIT",
+  "scripts": {
+    "babel": "babel src/ -d out/",
+    "build": "onchange 'src/*.js' -- npm run babel"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "onchange": "^4.0.0"
+  }
+}
